@@ -32,7 +32,7 @@
     "multiline": "^1.0.2"
   },
   "dependencies": {
-    "gulp-util": "^3.0.4",
+    "plugin-error": "^1.0.1",
     "lodash": "^3.6.0",
     "request": "^2.54.0",
     "through2": "^0.6.3"
