@@ -9,6 +9,7 @@
 		through2 = require('through2'),
 		PluginError = require('plugin-error'),
 		CSS_URL_MATCHER = /(url\s*\(\s*['"]?)(.*?)(['"]?\s*\))/g,
+		QUERY_NAME = 'md5',
 		PLUGIN_NAME = 'gulp-css-resource-cache-buster',
 		RemoteUrlProtocols = {
 			'http:': true,
@@ -123,7 +124,7 @@
 			if (!md5Map[urlStr]) return match;
 
 			var urlObj = url.parse(urlStr, true, true);
-          urlObj.query['md5-by-cache-buster'] = md5Map[urlStr];
+			urlObj.query[QUERY_NAME] = md5Map[urlStr];
 
 			// query (object; see querystring) will only be used if search is
 			// absent. See https://nodejs.org/api/url.html#url_url_format_urlobj
