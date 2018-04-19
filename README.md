@@ -1,7 +1,5 @@
 gulp-css-resource-cache-buster
 ==============================
-[![Build Status](https://travis-ci.org/mixi-inc/gulp-css-resource-cache-buster.svg)](https://travis-ci.org/mixi-inc/gulp-css-resource-cache-buster)
-[![npm version](https://badge.fury.io/js/gulp-css-resource-cache-buster.svg)](http://badge.fury.io/js/gulp-css-resource-cache-buster)
 
 Cache buster for resources specified in CSS files.
 
